@@ -48,4 +48,8 @@ For more information on how the package works and for a complete list of functio
 
 ## Authors
 
-[Lucas Gelape](https://github.com/lgelape), for [Volt Data Lab](https://github.com/voltdatalab).
+[Lucas Gelape](https://github.com/lgelape), for [Volt Data Lab](https://www.voltdata.info/).
+
+## Contributors
+
+[Sérgio Spagnuolo](https://github.com/voltdatalab), [Denisson Silva](https://github.com/silvadenisson) e [Fernando Meireles](https://github.com/meirelesff)
