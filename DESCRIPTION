@@ -1,0 +1,28 @@
+Package: pollingBR
+Type: Package
+Title: Extract Data of Brazilian Electoral Pools
+Version: 0.1.0
+Authors@R: c(
+    person("Lucas", "Gelape", , "lucas@voltdata.info", c("aut", "cre")),
+    person("Sérgio", "Spagnuolo", , "sergio@voltdata.info", c("aut"))
+    )
+Maintainer: Lucas Gelape <lucas@voltdata.info>
+Description: This package gives a set of functions to extract data from the API of 
+    Poder 360's Brazilian electoral pools data repository (https://www.poder360.com.br/pesquisas-de-opiniao/api/). 
+    which contains pools from several institutes for presidential, gubernatorial, 
+    senatorial and mayoral elections since the 2000 elections.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports:
+    dplyr (>= 0.8.0.1),
+    httr (>= 1.4.0),
+    jsonlite (>= 1.6),
+    rlang (>= 0.3.4),
+    magrittr (>= 1.5)
+RoxygenNote: 6.1.1.9000
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
