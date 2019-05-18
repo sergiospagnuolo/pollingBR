@@ -44,7 +44,7 @@ Besides those four basic functions, `get_cities()` returns a `data.frame` contai
 
 ## More information
 
-For more information on how the package works and for a complete list of functions, see the vignettes (in [English]() and [Portuguese]()).
+For more information on how the package works and for a complete list of functions, see the vignettes (in [English](https://github.com/voltdatalab/pollingBR/blob/master/vignettes/Introduction_pollingBR.md) and [Portuguese](https://github.com/voltdatalab/pollingBR/blob/master/vignettes/Introducao_pollingBR.md)).
 
 ## Authors
 
