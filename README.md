@@ -52,4 +52,4 @@ For more information on how the package works and for a complete list of functio
 
 ## Contributors
 
-[Sérgio Spagnuolo](https://github.com/voltdatalab), [Denisson Silva](https://github.com/silvadenisson) e [Fernando Meireles](https://github.com/meirelesff)
+[Sérgio Spagnuolo](https://github.com/voltdatalab), [Denisson Silva](https://github.com/silvadenisson) and [Fernando Meireles](https://github.com/meirelesff)
