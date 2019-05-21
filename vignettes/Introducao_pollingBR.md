@@ -4,6 +4,8 @@
 
 O `pollingBR` foi criado para facilitar a utilização de dados contidos no [banco de dados de pesquisas eleitorais do site Poder360](https://www.poder360.com.br/pesquisas-de-opiniao/api/). O pacote facilita a extração de dados da API de dados abertos desse repositório, desenvolvida pelo [Volt Data Lab](https://www.voltdata.info/).
 
+Os dados têm sido compilados pelo jornalista Fernando Rodrigues e sua equipe há vários anos e constituem o mais rico acervo de dados de pesquisas eleitorais no país.
+
 O pacote possui quatro funções principais, que possuem características semelhantes. Cada uma delas corresponde a um dos cargos cujas pesquisas constam no banco de dados:
 
 * `president()` para as pesquisas eleitorais para Presidente da República;
