@@ -4,6 +4,8 @@
 
 `pollingBR` was created to give an easier access to data from the [data repository of electoral polls from Poder360's news website](https://www.poder360.com.br/pesquisas-de-opiniao/api/). The package facilitates extraction of information from the open data API - developed by [Volt Data Lab](https://www.voltdata.info/) - of this repository.
 
+The data has been compiled by Brazilian journalist Fernando Rodrigues and his team for several years and has been the richest repository of polling data in the country. 
+
 The package has **four** main functions, all with similar arguments. Each of them correspond to one of the offices for which there are electoral polls in the data repository:
 
 * `president()` for polls to the Presidency;
