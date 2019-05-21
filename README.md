@@ -2,6 +2,8 @@
 
 `pollingBR` offers a set of functions to extract data from the API of [Poder 360's Brazilian electoral polls data repository](https://www.poder360.com.br/pesquisas-de-opiniao/api/), which contains polls from several institutes for presidential, gubernatorial, senatorial and mayoral elections since the 2000 elections.
 
+The data has been compilled by Brazilian journalist Fernando Rodrigues and his team for several years and has been the richest repository of polling data in the country. 
+
 ## Installation
 
 Currently, `pollingBR` can be installed directly from GitHub:
