@@ -22,7 +22,7 @@ The package has **four** main functions, all with similar arguments. Each of the
 * `senator()` for polls to Senatorial seats of the 26 Brazilian states and its Federal District;
 * `mayor()` for polls to Mayor in more than 200 Brazilian cities.
 
-Users need to specify the election year that they wish to obtain polls. The defaults returns results for all states (`states = "ALL"`), both rounds (where/when there are two-round elections - `round = c(1, 2)`), and spontaneous, stimulated and rejection responses (`type = c(1, 2, 3)`).
+Users need to specify the election year that they wish to obtain polls. 
 
 ```{r, eval=FALSE}
 # Extract data from all polls for president in 2018
@@ -30,7 +30,7 @@ Users need to specify the election year that they wish to obtain polls. The defa
 president_2018 <- president(2018)
 ```
 
-They can also filter polls from a certain *geographical level* by specifying the argument `state`, *type* (spontaneous, stimulated or rejection estimates) - `type` -, and from which *round* (first or second) - `round`.
+They can also filter polls from a certain *geographical level* by specifying the argument `state`, *type* (spontaneous, stimulated or rejection estimates) - `type` -, and from which *round* (first or second) - `round`. The defaults are all states (`states = "ALL"`), both rounds (where/when there are two-round elections - `round = c(1, 2)`), and spontaneous, stimulated and rejection responses (`type = c(1, 2, 3)`).
 
 ```{r, eval=FALSE}
 # Extract data from first round polls for governor of Sao Paulo in 2014
