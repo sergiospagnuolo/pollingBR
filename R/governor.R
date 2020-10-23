@@ -10,13 +10,13 @@
 #'   2006, 2010, 2014, 2018.
 #' @param state Initials in capital letters (\code{character}) of the state
 #'   where the poll was conducted. Default returns all gubernatorial polls
-#'   for the corresponding election year.
+#'   for the corresponding election year (\code{state = "ALL"}).
 #' @param round Number (\code{integer}) corresponding to the election round
 #'   that was polled. Default returns polls for both first and second
-#'   rounds.
+#'   rounds (\code{round = c(1, 2)}).
 #' @param type Number (\code{character}) indicating if the user wants the
 #'   spontaneous (1), estimulated (2), or rejection (3) estimations of polls.
-#'   Default returns all poll results.
+#'   Default returns all poll results (\code{type = c(1, 2, 3)}).
 #'
 #' @return \code{data.frame} with results from polls conducted for gubernatorial
 #'   elections in Brazil, for the \code{year} specified, with the following

@@ -58,7 +58,7 @@ test_federal_year <- function(year){
 
 test_mayor_year <- function(year){
 
-  if(!is.numeric(year) | !year %in% seq(2000, 2016, 4)) stop("Invalid input in the argument \"year\". \nFor the mayor() function, \"year\" should be equals to 2000, 2004, 2008, 2012 or 2016.")
+  if(!is.numeric(year) | !year %in% seq(2000, 2020, 4)) stop("Invalid input in the argument \"year\". \nFor the mayor() function, \"year\" should be equals to 2000, 2004, 2008, 2012 or 2016.")
 }
 
 test_senator_year <- function(year){

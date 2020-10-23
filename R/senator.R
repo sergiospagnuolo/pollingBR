@@ -10,10 +10,10 @@
 #'   2010, 2014, 2018.
 #' @param state Initials in capital letters (\code{character}) of the state
 #'   election polled. Default returns all senatorial polls for the
-#'   corresponding election year.
+#'   corresponding election year (\code{state = "ALL"}).
 #' @param type Number (\code{character}) indicating if the user wants the
 #'   spontaneous (1), estimulated (2), or rejection (3) estimations of polls.
-#'   Default returns all poll results.
+#'   Default returns all poll results (\code{type = c(1, 2, 3)}).
 #'
 #' @importFrom magrittr %>%
 #' @importFrom rlang .data

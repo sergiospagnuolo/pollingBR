@@ -10,13 +10,13 @@
 #' @param state Initials in capital letters (\code{character}) of the state (if
 #'   the poll was conducted only in state-level) or the country ("BR", if it
 #'   was in national-level). Default returns all presidential polls for the
-#'   corresponding election year.
+#'   corresponding election year (\code{state = "ALL"}).
 #' @param round Number (\code{integer}) corresponding to the election round that
 #'   the poll corresponds. Default returns polls for both first and second
-#'   rounds.
+#'   rounds (\code{round = c(1, 2)}).
 #' @param type Number (\code{character}) indicating if the user wants the
 #'   spontaneous (1), estimulated (2), or rejection (3) estimations of polls.
-#'   Default returns all poll results.
+#'   Default returns all poll results (\code{type = c(1, 2, 3)}).
 #'
 #' @return \code{data.frame} with results from polls conducted for presidential
 #'   elections in Brazil, for the \code{year} specified, with the following

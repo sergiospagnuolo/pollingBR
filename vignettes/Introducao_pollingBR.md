@@ -45,7 +45,7 @@ president_2018 <- president(2018)
 governor_2014 <- governor(2014)
 ```
 
-* O argumento `state` indica a abrangência territorial da pesquisa. De forma padrão, as funções retornam as pesquisas eleitorais em todos os estados ou cidades (além de todas as pesquisas de abrangência nacional, no caso de presidente da República). O usuário pode especificar somente algum(ns) estado(s) por meio da sua sigla (ou o país, no caso da função `president()`, cuja sigla é `"BR"`).
+* O argumento `state` indica a abrangência territorial da pesquisa. De forma padrão, as funções retornam as pesquisas eleitorais em todos os estados ou cidades (além de todas as pesquisas de abrangência nacional, no caso de presidente da República - `state = "ALL"`). O usuário pode especificar somente algum(ns) estado(s) por meio da sua sigla (ou o país, no caso da função `president()`, cuja sigla é `"BR"`).
 
 ```{r, message=FALSE}
 # Extrai dados de todas as pesquisas de abrangencia nacional para presidente em 2014
@@ -54,7 +54,7 @@ presidente_br_2014 <- president(2014, state = "BR")
 senador_sul_2010 <- senator(2010, state = c("RS", "SC", "PR"))
 ```
 
-* O argumento `type` indica o tipo de resposta da pesquisa: espontânea (1), estimulada (2) ou rejeição (3). De forma padrão, as funções retornam os resultados para as três possibilidades de resposta (vale lembrar que o resultado que usualmente vemos divulgado é o das respostas *estimuladas*). O usuário pode especificar uma ou mais possibilidades de respostas.
+* O argumento `type` indica o tipo de resposta da pesquisa: espontânea (1), estimulada (2) ou rejeição (3). De forma padrão, as funções retornam os resultados para as três possibilidades de resposta - `type = c(1, 2, 3)` (vale lembrar que o resultado que usualmente vemos divulgado é o das respostas *estimuladas*). O usuário pode especificar uma ou mais possibilidades de respostas.
 
 ```{r, message=FALSE}
 # Obtem dados de respostas espontaneas e estimuladas para pesquisas para o senado em SP no ano de 2006
@@ -63,7 +63,7 @@ senado_sp_2006 <- senator(2006, state = "SP", type = c(1, 2))
 presidente_rejeicao_2018 <- president(2018, state = "BR", type = 3)
 ```
 
-* Por fim, o argumento `round` registra se o banco de dados traz informações de pesquisas para o primeiro ou segundo turno das eleições (o padrão das funções retorna os dados para os dois turnos). Como as eleições para senador são de turno único, a função `senator()` não contém esse argumento.
+* Por fim, o argumento `round` registra se o banco de dados traz informações de pesquisas para o primeiro ou segundo turno das eleições (o padrão das funções retorna os dados para os dois turno - `round = c(1, 2)`). Como as eleições para senador são de turno único, a função `senator()` não contém esse argumento.
 
 ```{r, message=FALSE}
 # Extrai os dados de todas as respostas estimuladas de pesquisas para o primeiro turno de eleicoes para prefeito em 2012

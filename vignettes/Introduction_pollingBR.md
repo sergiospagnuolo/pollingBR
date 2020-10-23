@@ -45,7 +45,7 @@ president_2018 <- president(2018)
 governor_2014 <- governor(2014)
 ```
 
-* The `state` argument indicates the geographical level the poll is representative of. The default returns polls for all states and cities (besides the national-level polls, in the presidential elections). The user can specify only one or a few states by using their acronyms (or filter only by national-level polls, in the case of the `president()` function, using the `"BR"` acronym).
+* The `state` argument indicates the geographical level the poll is representative of. The default returns polls for all states and cities (besides the national-level polls, in the presidential elections (`state = "ALL"`). The user can specify only one or a few states by using their acronyms (or filter only by national-level polls, in the case of the `president()` function, using the `"BR"` acronym).
 
 ```{r, message=FALSE}
 # Extract data for all national-level polls for president in 2014
@@ -54,7 +54,7 @@ president_br_2014 <- president(2014, state = "BR")
 senate_south_2010 <- senator(2010, state = c("RS", "SC", "PR"))
 ```
 
-* The `type` argument designates the type of response the estimate corresponds to: spontaneous (1), stimulated (2) or rejection (3). Default returns estimates for all three possibilites (usually, results reported by the Brazilian media are from *stimulated* responses). The user can specify only one or more possibilities of responses.
+* The `type` argument designates the type of response the estimate corresponds to: spontaneous (1), stimulated (2) or rejection (3). Default (`type = c(1, 2, 3)`) returns estimates for all three possibilites (usually, results reported by the Brazilian media are from *stimulated* responses). _Stimulated_ responses are those in which voters are asked to choose from a list of candidates; _spontaneous_ are those in which voters answer without getting any information from the interviewer on candidates' names; (3) _rejection_ are answers on a candidate's rejection (and not vote intention). The user can specify only one or more possibilities of responses.
 
 ```{r, message=FALSE}
 # Obtem dados de respostas espontaneas e estimuladas para pesquisas para o senado em SP no ano de 2006
@@ -63,7 +63,7 @@ senate_sp_2006 <- senator(2006, state = "SP", type = c(1, 2))
 president_rejection_2018 <- president(2018, state = "BR", type = 3)
 ```
 
-* The `round` argument registers if the extracted data are from the first or second round of the elections (default returns estimates for both rounds). Senatorial elections are disputed in only one orund, so the `senator()` function does not include this optional argument.
+* The `round` argument registers if the extracted data are from the first or second round of the elections (default returns estimates for both rounds - `round = c(1, 2)`). Senatorial elections are disputed in only one orund, so the `senator()` function does not include this optional argument.
 
 ```{r, message=FALSE}
 # Extract data from all stimulated responses for polls in the first round of mayoral elections in 2012
