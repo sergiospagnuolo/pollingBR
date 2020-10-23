@@ -10,7 +10,7 @@ Currently, `pollingBR` can be installed directly from GitHub:
 
 ```
 if (!require("devtools")) install.packages("devtools")
-devtools::install_github("voltdatalab/pollingBR")
+devtools::install_github("sergiospagnuolo/pollingBR")
 ```
 
 ## Functions
