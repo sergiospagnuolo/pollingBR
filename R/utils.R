@@ -53,15 +53,15 @@ extract_data_api <- function(id, year){
 
 test_federal_year <- function(year){
 
-  if(!is.numeric(year) | !year %in% seq(2002, 2018, 4)) stop("Invalid input in the argument \"year\". \nFor the president() and governor() functions, \"year\" should be equals to 2002, 2006, 2010, 2014 or 2018.")
+  if(!is.numeric(year) | !year %in% seq(2002, 2022, 4)) stop("Invalid input in the argument \"year\". \nFor the president() and governor() functions, \"year\" should be equal to 2002, 2006, 2010, 2014, 2018 or 2022 (national election-years).")
 }
 
 test_mayor_year <- function(year){
 
-  if(!is.numeric(year) | !year %in% seq(2000, 2020, 4)) stop("Invalid input in the argument \"year\". \nFor the mayor() function, \"year\" should be equals to 2000, 2004, 2008, 2012 or 2016.")
+  if(!is.numeric(year) | !year %in% seq(2000, 2020, 4)) stop("Invalid input in the argument \"year\". \nFor the mayor() function, \"year\" should be equal to 2000, 2004, 2008, 2012, 2016 or 2020 (local election-years).")
 }
 
 test_senator_year <- function(year){
 
-  if(!is.numeric(year) | !year %in% seq(2006, 2018, 4)) stop("Invalid input in the argument \"year\". \nFor the senator() function, \"year\" should be equals to 2006, 2010, 2014 or 2018.")
+  if(!is.numeric(year) | !year %in% seq(2006, 2022, 4)) stop("Invalid input in the argument \"year\". \nFor the senator() function, \"year\" should be equals to 2006, 2010, 2014, 2018 or 2022 (national election-years).")
 }
